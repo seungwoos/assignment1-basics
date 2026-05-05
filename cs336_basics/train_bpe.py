@@ -1,8 +1,8 @@
 import os
 from collections import Counter
 
-from .pretokenization import compute_pretokens
 from .bpe_utils import merge_pair_in_tuple
+from .pretokenization import compute_pretokens
 
 
 def build_vocab(special_tokens: list[str]) -> dict[int, bytes]:
